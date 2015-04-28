@@ -11,4 +11,8 @@ var Player = function() {
   var stashWinnings = function(winnings) {
     this.discard.concat(winnings);
   }
+
+  var popCard = function() {
+    return deck[deck.length - 1];
+  }
 }
