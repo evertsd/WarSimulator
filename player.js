@@ -13,6 +13,9 @@ var Player = function() {
   }
 
   var popCard = function() {
-    return deck[deck.length - 1];
+    var popped = deck[deck.length - 1];
+    this.deck = deck.slice(0, deck.length - 1);
+
+    return popped;
   }
 }
